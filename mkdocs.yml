@@ -1,6 +1,15 @@
+# Project information
 site_name: Clean Windows Guide
+site_url: https://bruch-alex.github.io/clean-windows-guide/
+site_author: Alex Bruch
+site_description: >-
+  
+
+# Repository
 repo_url: https://github.com/bruch-alex/clean-windows-guide
 repo_name: bruch-alex/clean-windows-guide
+
+# Configuration
 theme:
   name: material
   features:
