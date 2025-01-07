@@ -1,0 +1,60 @@
+site_name: Clean Windows Guide
+repo_url: https://github.com/bruch-alex/clean-windows-guide
+repo_name: bruch-alex/clean-windows-guide
+theme:
+  name: material
+  features:
+    - toc.integrate
+    - navigation.top
+    - navigation.expand
+    - navigation.footer
+    - navigation.indexes
+    - content.code.copy
+  palette:
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default 
+      primary: pink
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: pink
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
+
+markdown_extensions:
+  - toc:
+      permalink: true
+      title: Содержание
+      toc_depth: 4
+  - attr_list
+  - md_in_html
+  - pymdownx.superfences
+  - admonition
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+
+nav:
+  - О сайте: ./index.md
+  - Создание установочной флэшки Windows: ./windows-media-creation.md
+  - Процесс установки Windows: ./windows-setup-process.md
+  - Активация Windows: ./windows-activation.md
+  - Групповые политики: ./policies.md
+  - Удаление встроенных приложений: ./app-uninstallation.md
+  - Установка новых приложений: ./app-installation.md
